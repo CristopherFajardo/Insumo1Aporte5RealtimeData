@@ -1,0 +1,92 @@
+ion-button {
+    --background: transparent;
+    --color: #333;
+    --border-width: 0;
+    --border-color: transparent;
+    --border-radius: 5px;
+    --padding-start: 20px;
+    --padding-end: 20px;
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+    text-transform: capitalize;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  
+    &:before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+      width: 15px;
+      height: 15px;
+    }
+  
+    &.bathroom {
+      --color: #333;
+  
+      &:before {
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: 0 0 0 1px #333;
+      }
+    }
+  
+    &.bedroom {
+      --color: #f4a460;
+  
+      &:before {
+        border-left: 2px solid #333;
+        border-bottom: 2px solid #333;
+        transform: rotate(-45deg);
+      }
+    }
+  
+    &.kitchen {
+      --color: #d97d54;
+  
+      &:before {
+        border-left: 2px solid #333;
+        border-bottom: 2px solid #333;
+        transform: rotate(45deg);
+      }
+    }
+  
+    &.garage {
+      --color: #6c5ce7;
+  
+      &:before {
+        border-radius: 0 5px 5px 0;
+        background-color: #fff;
+        box-shadow: 0 0 0 1px #333;
+      }
+    }
+  
+    &.patio-bajo {
+      --color: #2ecc71;
+  
+      &:before {
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 10px solid #333;
+      }
+    }
+  
+    &.sala {
+      --color: #34495e;
+  
+      &:before {
+        border-radius: 0 5px 5px 0;
+        background-color: #fff;
+        box-shadow: 0 0 0 1px #333;
+      }
+    }
+  
+    &.ion-color-warning {
+      --color: #fff;
+      --border-color: #fff;
+  
+      &:before {
+        box-shadow: 0 0 0 2px #fff;
+      }
+    }
+  }
