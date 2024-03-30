@@ -1,0 +1,7 @@
+{
+  "name": "FirebaseAppRT",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
